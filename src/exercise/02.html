@@ -22,9 +22,12 @@
     // 🐨 Please re-implement the regular document.createElement code above
     // with these React API calls
     // 💰 The example in the markdown file should be a good hint for you.
+    const helloNode = React.createElement('span', null, 'Hello')
+    const worldNode = React.createElement('span', null, ' World')
+
     const divProps = {
       className: 'container',
-      children: 'Hello World',
+      children: [helloNode, worldNode],
     }
     const div = React.createElement('div', divProps)
     ReactDOM.render(div, rootElement)
